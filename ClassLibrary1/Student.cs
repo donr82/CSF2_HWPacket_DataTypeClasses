@@ -66,7 +66,7 @@ namespace ClassLibrary1
             return string.Format($"FirstName: {FirstName}\n" +
                                  $"LastName: {LastName}\n" +
                                  $"Id: {Id}\n" +
-                                 $"Gpa: {Gpa:n0}\n");
+                                 $"Gpa: {Gpa:f}\n");
         }//end ToString
 
     }//end class

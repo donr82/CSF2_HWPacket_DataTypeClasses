@@ -25,6 +25,8 @@ namespace TesterProgram
 
             Console.WriteLine($"{s1.FirstName} {s1.LastName} is our new student. His id is {s1.Id} and his GPA is {s1.Gpa}.");
 
+            Console.WriteLine(s1);
+
             Console.WriteLine("\n\nVehicle Lab Set\n\n");
 
             Vehicle v1 = new Vehicle();
@@ -35,6 +37,19 @@ namespace TesterProgram
 
             Console.WriteLine($"Doc Brown made a time machine out of a { v1.Year}  { v1.Make} { v1.Model}.  " +
                 $"He somehow got it to its speed of 88mph eventhough it weighed {v1.Weight:n0}lbs.");
+
+            Console.WriteLine(v1);
+
+            Console.WriteLine("\n\nLogin Lab Set\n\n");
+
+            Login l1 = new Login();
+            l1.Username = "Gollum";
+            l1.Password = "My_Precious";
+
+            Console.WriteLine($"Usrname: {l1.Username}\n" +
+                $"Password: {l1.Password}");
+
+            Console.WriteLine(l1);
         }
     }
 }

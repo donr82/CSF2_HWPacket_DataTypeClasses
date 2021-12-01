@@ -63,10 +63,10 @@ namespace ClassLibrary1
 
         public override string ToString()
         {
-            return string.Format($"Make: {Make}/n" +
+            return string.Format($"Make: {Make}\n" +
                                  $"Model: {Model}\n" +
                                  $"Year: {Year}\n" +
-                                 $"Weight: {Weight:n0}\n");
+                                 $"Weight: {Weight:n0}lbs\n");
         }
 
     }
