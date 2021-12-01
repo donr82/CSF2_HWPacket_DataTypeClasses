@@ -50,6 +50,20 @@ namespace TesterProgram
                 $"Password: {l1.Password}");
 
             Console.WriteLine(l1);
+
+            Console.WriteLine("\n\nContact Info Lab Set\n\n");
+
+            ContactInfo c1 = new ContactInfo();
+            c1.StreetAddress = "5858 Lucas Valley Road";
+            c1.City = "Nicasio";
+            c1.State = "CA";
+            c1.Zip = "94946";
+            c1.Phone = "(415) 662 - 1704";
+            c1.Email = "info@skysound.com";
+
+            Console.WriteLine($"I have plans to break into Skywalker Ranch which is located at {c1.StreetAddress}, {c1.City}, {c1.State} {c1.Zip}. If not I guess I could call them at {c1.Phone} or email at {c1.Email}.");
+
+            Console.WriteLine(c1);
         }
     }
 }
