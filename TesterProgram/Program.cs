@@ -89,6 +89,19 @@ namespace TesterProgram
             Console.WriteLine($"{cu1}\nMr. Skywalker has account number {cr1.AccountNumber} with a balance of {cr1.Balance:c}. It is {cr1.IsPastDue} that his account is past due, probably because of the {cr1.AnnualInterestRate}% interest rate.\n");
 
             Console.WriteLine(cr1);
+
+            Console.WriteLine("\n\nBook Lab Set\n\n");
+
+            Book bk1 = new Book();
+            bk1.Title = "Let Me Off at the Top!";
+            bk1.Author = "Ron Burgandy";
+            bk1.NumberOfPages = 223;
+
+            Console.WriteLine($"{bk1.Title} is an autobiography written by {bk1.Author}. It is a pretty quick read with only {bk1.NumberOfPages} pages.\n");
+
+            Console.WriteLine(bk1);
+
+
         }
     }
 }
