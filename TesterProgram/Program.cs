@@ -64,6 +64,18 @@ namespace TesterProgram
             Console.WriteLine($"I have plans to break into Skywalker Ranch which is located at {c1.StreetAddress}, {c1.City}, {c1.State} {c1.Zip}. If not I guess I could call them at {c1.Phone} or email at {c1.Email}.");
 
             Console.WriteLine(c1);
+
+            Console.WriteLine("\n\nCustomer\n\n");
+
+            Customer cu1 = new Customer();
+            cu1.CustomerId = "Red 5";
+            cu1.FirstName = "Luke";
+            cu1.LastName = "Skywalker";
+            cu1.ContactInformation = c1;
+
+            Console.WriteLine($"{cu1.FirstName} {cu1.LastName}'s Id is {cu1.CustomerId} and he is standing by. If he is not standing by you can contact him here \n{cu1.ContactInformation}.\n");
+
+            Console.WriteLine(cu1);
         }
     }
 }
