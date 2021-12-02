@@ -101,6 +101,34 @@ namespace TesterProgram
 
             Console.WriteLine(bk1);
 
+            Console.WriteLine("\n\nLibrary Lab Set\n\n");
+
+            Book bk2 = new Book("How to Archer: The Ultimate Guide to Espionage and Style and Women and Also Cocktails Ever Written", "Sterling Archer", 192);
+
+            List<Book> books = new List<Book>() { bk1, bk2 };
+
+            
+
+            Library lb1 = new Library();
+            lb1.LibraryName = "Dons Book House";
+            lb1.StreetAddress = "1234 Book Ave";
+            lb1.City = "Kansas City";
+            lb1.State = "MO";
+            lb1.Zip = "54321";
+            lb1.Books = books;
+
+            Console.WriteLine($"What is available at this Library: \n" +
+                $"{bk1}\n{bk2}\n" +
+                $"Where is the Library located?:\n" +
+                $"{lb1.LibraryName}\n" +
+                $"{lb1.StreetAddress}\n" +
+                $"{lb1.City}\n" +
+                $"{lb1.State}\n" +
+                $"{lb1.Zip}\n");
+
+            Console.WriteLine(lb1);
+            
+
 
         }
     }
