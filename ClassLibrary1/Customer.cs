@@ -66,7 +66,7 @@ namespace ClassLibrary1
             return string.Format($"Customer Id: {CustomerId}\n" +
                 $"First Name: {FirstName}\n" +
                 $"Last Name: {LastName}\n" +
-                $"Contact Information: {ContactInformation}\n");
+                $"{ContactInformation}\n");
         }//end ToString
 
 

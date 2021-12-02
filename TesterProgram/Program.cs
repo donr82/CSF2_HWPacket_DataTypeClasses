@@ -65,7 +65,7 @@ namespace TesterProgram
 
             Console.WriteLine(c1);
 
-            Console.WriteLine("\n\nCustomer\n\n");
+            Console.WriteLine("\n\nCustomer lab Set\n\n");
 
             Customer cu1 = new Customer();
             cu1.CustomerId = "Red 5";
@@ -76,6 +76,19 @@ namespace TesterProgram
             Console.WriteLine($"{cu1.FirstName} {cu1.LastName}'s Id is {cu1.CustomerId} and he is standing by. If he is not standing by you can contact him here \n{cu1.ContactInformation}.\n");
 
             Console.WriteLine(cu1);
+
+            Console.WriteLine("\n\nCredit Card Account Lab Set\n\n");
+
+            CreditCardAccount cr1 = new CreditCardAccount();
+            cr1.AccountNumber = 123456;
+            cr1.CustomerInfo = cu1;
+            cr1.Balance = 10500;
+            cr1.IsPastDue = true;
+            cr1.AnnualInterestRate = 50;
+
+            Console.WriteLine($"{cu1}\nMr. Skywalker has account number {cr1.AccountNumber} with a balance of {cr1.Balance:c}. It is {cr1.IsPastDue} that his account is past due, probably because of the {cr1.AnnualInterestRate}% interest rate.\n");
+
+            Console.WriteLine(cr1);
         }
     }
 }
