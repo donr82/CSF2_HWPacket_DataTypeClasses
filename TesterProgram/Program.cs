@@ -13,7 +13,7 @@ namespace TesterProgram
         {
             Console.Title = "CSF2 Homework Packet";
 
-            Console.WriteLine("CSF2 Homework Packet for Data Type Classes");            
+            Console.WriteLine("CSF2 Homework Packet for Data Type Classes");
 
             Console.WriteLine("\n\nStudent Data Type Lab Set");
 
@@ -107,7 +107,7 @@ namespace TesterProgram
 
             List<Book> books = new List<Book>() { bk1, bk2 };
 
-            
+
 
             Library lb1 = new Library();
             lb1.LibraryName = "Dons Book House";
@@ -127,7 +127,19 @@ namespace TesterProgram
                 $"{lb1.Zip}\n");
 
             Console.WriteLine(lb1);
-            
+
+            Console.WriteLine("\n\n Song Lab Set\n\n");
+
+            Song sng1 = new Song();
+            sng1.Artist = "Bing Crosby";
+            sng1.Title = "White Christmas";
+            sng1.LengthInSeconds = 184;
+
+            Console.WriteLine($"{sng1.Artist} sang the song {sng1.Title} and it is {sng1.LengthInSeconds} seconds long.");
+
+            Console.WriteLine(sng1);
+
+
 
 
         }
